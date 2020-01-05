@@ -34,6 +34,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'react/jsx-props-no-spreading': 'off',
     'no-console': 'off',
+    'no-param-reassign':'off'
   },
   settings:{
     'import/resolver':{
