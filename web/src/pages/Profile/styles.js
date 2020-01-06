@@ -3,6 +3,7 @@ import { darken } from 'polished';
 
 export const Container = styled.div`
   max-width: 600px;
+  padding: 0 40px;
   margin: 50px auto;
 
   form {
@@ -54,6 +55,7 @@ export const Container = styled.div`
       }
     }
   }
+
   > button {
     width: 100%;
     margin: 10px 0 0;
