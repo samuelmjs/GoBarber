@@ -19,10 +19,11 @@ export default createGlobalStyle`
 
   html,body, #root{
     height: 100%;
+    background: linear-gradient(-90deg, #7159c1, #ab59c1);
   }
 
   body{
-    -webkit-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
   }
 
   body,input,button{
@@ -33,7 +34,7 @@ export default createGlobalStyle`
     text-decoration: none;
   }
 
-  ul{
+  li{
     list-style: none;
   }
 
