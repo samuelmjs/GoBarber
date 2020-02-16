@@ -53,6 +53,11 @@ export const NotificationList = styled.div`
 export const Scroll = styled(PerfectScrollBar)`
   max-height: 260px;
   padding: 5px 15px;
+
+  span {
+    color: #fff;
+    align-self: center;
+  }
 `;
 
 export const Notification = styled.div`

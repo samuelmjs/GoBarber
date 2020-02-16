@@ -5,6 +5,7 @@ export const Container = styled.div`
   max-width: 600px;
   margin: 40px auto;
 
+
   form {
     display: flex;
     flex-direction: column;
@@ -54,6 +55,7 @@ export const Container = styled.div`
       }
     }
   }
+
   > button {
     width: 100%;
     margin: 10px 0 0;
