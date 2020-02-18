@@ -1,8 +1,9 @@
-import React, { useRef, useState } from 'react';
-
+import React, { useRef, useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { MaterialIcons as Icon } from '@expo/vector-icons';
 
 import Background from '~/components/Background';
+import { updateProfileRequest } from '~/store/modules/user/actions';
 
 import {
   Container,
@@ -14,18 +15,37 @@ import {
 } from './styles';
 
 export default function Profile() {
+  const dispatch = useDispatch();
+  const profile = useSelector(state => state.user.profile);
+
   const emailRef = useRef();
   const oldPasswordRef = useRef();
   const passwordRef = useRef();
   const confirmPasswordRef = useRef();
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+  const [name, setName] = useState(profile.name);
+  const [email, setEmail] = useState(profile.email);
   const [oldPassword, setOldPassword] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  function handleSubmit() {}
+  useEffect(() => {
+    setOldPassword('');
+    setPassword('');
+    setConfirmPassword('');
+  }, [profile]);
+
+  function handleSubmit() {
+    dispatch(
+      updateProfileRequest({
+        name,
+        email,
+        oldPassword,
+        password,
+        confirmPassword,
+      })
+    );
+  }
 
   return (
     <Background>
@@ -92,7 +112,7 @@ export default function Profile() {
             onChangeText={setConfirmPassword}
           />
 
-          <SubmitButton onPress={() => {}}>Atualizar perfil</SubmitButton>
+          <SubmitButton onPress={handleSubmit}>Atualizar perfil</SubmitButton>
         </Form>
       </Container>
     </Background>
