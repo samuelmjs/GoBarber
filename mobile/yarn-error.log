@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add date-fns
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add react-navigation-stack
 
 PATH: 
   C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Samuel\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python27;C:\Python27\Scripts;C:\Program Files (x86)\Embarcadero\Studio\19.0\bin;C:\Users\Samuel\Documents\Embarcadero\Studio\19.0\Bpl;C:\Program Files (x86)\Embarcadero\Studio\19.0\bin64;C:\Users\Samuel\Documents\Embarcadero\Studio\19.0\Bpl\Win64;C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl;C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl\Win64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\dotnet;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\sqlite;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\Java\jdk1.8.0_161\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Git\cmd;C:\Program Files\PostgreSQL\10\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\NVPACK\gradle-2.9\bin;C:\NVPACK\apache-ant-1.8.2\bin;C:\NVPACK\jdk1.8.0_77\bin;C:\NVPACK\android-ndk-r12b;C:\NVPACK\android-sdk-windows\extras\android\support;C:\NVPACK\android-sdk-windows\build-tools;C:\NVPACK\android-sdk-windows\platform-tools;C:\NVPACK\android-sdk-windows\tools;C:\Users\Samuel\AppData\Local\Programs\Python\Python36\Scripts;C:\Users\Samuel\AppData\Local\Programs\Python\Python36;C:\Users\Samuel\AppData\Local\Microsoft\WindowsApps;;C:\Users\Samuel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Docker Toolbox;C:\android-sdk\emulator;C:\android-sdk\tools;C:\android-sdk\platform-tools;C:\android-sdk\tools\bin;C:\Users\Samuel\AppData\Roaming\npm;C:\Users\Samuel\AppData\Local\Yarn\bin
@@ -29,6 +29,7 @@ npm manifest:
     "dependencies": {
       "@react-native-community/masked-view": "0.1.5",
       "axios": "^0.19.2",
+      "date-fns": "^2.0.0-beta.5",
       "expo": "~36.0.0",
       "expo-linear-gradient": "~8.0.0",
       "immer": "^5.3.6",
@@ -2224,6 +2225,11 @@ Lockfile:
     version "1.0.6"
     resolved "https://registry.yarnpkg.com/damerau-levenshtein/-/damerau-levenshtein-1.0.6.tgz#143c1641cb3d85c60c32329e26899adea8701791"
     integrity sha512-JVrozIeElnj3QzfUIt8tB8YMluBJom4Vw9qTPpjGYQ9fYlB3D/rb6OordUxf3xeFB35LKWs0xqcO5U6ySvBtug==
+  
+  date-fns@^2.0.0-beta.5:
+    version "2.0.0-beta.5"
+    resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.0.0-beta.5.tgz#90885db3772802d55519cd12acd49de56aca1059"
+    integrity sha512-GS5yi964NDFNoja9yOdWFj9T97T67yLrUeJZgddHaVfc/6tHWtX7RXocuubmZkNzrZUZ9BqBOW7jTR5OoWjJ1w==
   
   dayjs@^1.8.15:
     version "1.8.20"
