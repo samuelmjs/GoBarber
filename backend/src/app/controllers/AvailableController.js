@@ -35,6 +35,7 @@ class AvailableController {
       '09:00',
       '10:00',
       '11:00',
+      '12:00',
       '13:00',
       '14:00',
       '15:00',
@@ -53,7 +54,7 @@ class AvailableController {
 
       return {
         time,
-        value: format(value, "yyyy-MM-dd'T'hh:mm:ssxxx"),
+        value: format(value, "yyyy-MM-dd'T'HH:mm:ssxxx"),
         available:
           isAfter(value, new Date()) &&
           !appoinments.find(a => format(a.date, 'HH:mm') === time),
